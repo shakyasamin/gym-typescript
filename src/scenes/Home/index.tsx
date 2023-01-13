@@ -49,8 +49,22 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
 
         {/* IMAGE */}
-        <div></div>
+        <div>
+          <img src={HomePageGraphic} alt="home-pageGraphic" />
+        </div>
       </div>
+      {/* SPONSORS */}
+      {isAboveMediumScreens && (
+        <div>
+          <div>
+            <div>
+              <img src={SponsorRedBull} alt="redbull-sponsor" />
+              <img src={SponsorForbes} alt="forbes-sponsor" />
+              <img src={SponsorFortune} alt="fortune-sponsor" />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
