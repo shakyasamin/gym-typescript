@@ -2,6 +2,7 @@ import Navbar from "@/scenes/navbar";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 import Home from "@/scenes/Home";
+import Benefits from "@/scenes/Benefits";
 SelectedPage;
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div className="app bg-gray-20 ">
       <Navbar
@@ -27,7 +29,8 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <Home setSelectedPage={setSelectedPage}/>
+      <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 }
