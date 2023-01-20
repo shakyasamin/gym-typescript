@@ -100,7 +100,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 <p className="mt-1 text-primary-500">
                   {errors.email.type === "required" &&
                     "This field is required."}
-                  {errors.email.type === "pattern" && "Invalid email addressr."}
+                  {errors.email.type === "pattern" && "Invalid email address."}
                 </p>
               )}
 
